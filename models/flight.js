@@ -22,7 +22,7 @@ const flightSchema = new mongoose.Schema({
     type: Date,
     default: () => new Date().setFullYear(new Date().getFullYear() + 1),
   },
-  destinations: [destinationSchema], // This is correct as long as destinationSchema is imported properly
+  destinations: [destinationSchema],
   tickets: [ticketSchema],
 });
 
