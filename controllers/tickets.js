@@ -31,7 +31,12 @@ function createTicket(req, res) {
       });
   }
 
+  function findTicket(ticketId) {
+    return Ticket.findById(ticketId).exec();
+  }
+
 module.exports = {
   new: newTicket,
   create: createTicket,
+  findTicket: findTicket,
 };

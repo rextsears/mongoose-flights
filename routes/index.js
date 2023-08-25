@@ -29,4 +29,5 @@ router.get('/flights/:id/tickets/new', ticketsController.new);
 // Route to handle the creation of a new ticket
 router.post('/flights/:id/tickets', ticketsController.create);
 
+
 module.exports = router;
