@@ -15,7 +15,7 @@ function createTicket(req, res) {
         const newTicket = new Ticket({
           seat: req.body.seat,
           price: req.body.price,
-          flight: flight._id, // Manually add the flight reference
+          flight: flight._id,
         });
   
         newTicket.save()
