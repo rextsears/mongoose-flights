@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const destinationSchema = require('./destinationSchema'); // Make sure to include the correct path to your destination schema file
+const destinationSchema = require('./destinationSchema');
 const ticketSchema = require('./ticketSchema');
 
 const flightSchema = new mongoose.Schema({
